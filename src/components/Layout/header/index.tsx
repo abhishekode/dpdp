@@ -59,7 +59,7 @@ const Header = () => {
               <Image src={'/logo.png'} alt="dp-dp-logo" height={100} width={100} />
             </Link>
           </div>
-
+          <ModeToggle />
         </div>
       </div>
     </div>

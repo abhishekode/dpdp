@@ -111,12 +111,12 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto overflow-hidden'>
       <div className='py-10'>
-        <div className='container'>
+        <div className=''>
           {data.length > 0 ? (
             <div className="">
-              <div className="mt-10 w-full h-full">
+              <div className="w-full h-full">
                 <div className="ag-theme-quartz h-[500px] pb-4">
 
                   <AgGridReact
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
               <CircularGraph data={data} />
             </div>
           ) : (
-            <div className="">
+            <div className="w-full">
               {error && <p className='text-red-600'>{error}</p>}
               <p>Please upload a CSV file.</p>
               <label htmlFor='csvInput' style={{ display: 'block' }}>
